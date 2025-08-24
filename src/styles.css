@@ -1,0 +1,147 @@
+
+/*
+.candidates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.candidate-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  background: #f9f9f9;
+  transition: transform 0.2s ease-in-out;
+}
+
+.candidate-card:hover {
+  transform: scale(1.05);
+}
+
+.candidate-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+*/
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* capa oscura */
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-top: 8vh;
+  padding-bottom: 5vh;
+}
+
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.access-section {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+
+.access-section input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.access-section input::placeholder {
+  color: #ccc;
+}
+
+
+.access-section button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0077cc;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.access-section button:hover {
+  background-color: #005fa3;
+}
+
+
+.access-section button:last-child {
+  background-color: #e74c3c;
+}
+
+.access-section button:last-child:hover {
+  background-color: #c0392b;
+}
+
+
+.error {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-top: 20px;
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 6px;
+}
+
+
+@media (max-width: 480px) {
+  .access-section {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .overlay {
+    padding-top: 6vh;
+  }
+}
